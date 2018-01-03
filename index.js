@@ -35,9 +35,6 @@ function readIt (files) {
         console.log(data)
         rl.close()
         setTimeout(listPicNames, 500)
-        // rl.on('line', input => {
-        //   console.log('press any key to return to menu')
-        // })
       }
     })
   })
