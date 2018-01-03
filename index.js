@@ -20,14 +20,24 @@ function listPicNames () {
     if (err) throw err
     else {
       files.forEach((f, i) => console.log(`${i + 1}: ${f}`))
-      const rl = create()
-      rl.prompt()
-      rl.on('line', input => {
-        fs.readFile(`./data/${files[input]}`, 'utf8', (err, data) => {
-          if (err) throw err
-          else console.log(data)
-        })
-      })
+      readIt(files)
     }
+  })
+}
+
+function readIt (files) {
+  const rl = create()
+  rl.prompt()
+  rl.on('line', input => {
+    fs.readFile(`./data/${files[input - 1]}`, 'utf8', (err, data) => {
+      if (err) throw err
+      else {
+        console.log(data)
+        setTimeout(listPicNames, 500)
+        // rl.on('line', input => {
+        //   console.log('press any key to return to menu')
+        // })
+      }
+    })
   })
 }
