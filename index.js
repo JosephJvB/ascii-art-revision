@@ -33,6 +33,7 @@ function readIt (files) {
       if (err) throw err
       else {
         console.log(data)
+        rl.close()
         setTimeout(listPicNames, 500)
         // rl.on('line', input => {
         //   console.log('press any key to return to menu')
