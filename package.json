@@ -1,0 +1,29 @@
+{
+  "name": "ascii-art-reader",
+  "version": "1.0.0",
+  "description": "im doing async practise",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JosephJvB/ascii-art-reader.git"
+  },
+  "keywords": [
+    "key",
+    "words"
+  ],
+  "author": "joevb",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JosephJvB/ascii-art-reader/issues"
+  },
+  "homepage": "https://github.com/JosephJvB/ascii-art-reader#readme",
+  "devDependencies": {
+    "nodemon": "^1.14.7",
+    "tap-diff": "^0.1.1",
+    "tape": "^4.8.0"
+  }
+}
